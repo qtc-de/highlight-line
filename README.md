@@ -8,6 +8,8 @@ highlight stays active even when the cursor moves. This makes
 it easier to keep track of important lines that you want to keep
 focus on.
 
+![image](https://github.com/qtc-de/highlight-line/assets/49147108/43135ba0-deb5-483c-ad13-f7ef4ddb7f69)
+
 
 ### Installation
 
