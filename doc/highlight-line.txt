@@ -1,0 +1,88 @@
+*highlight-line.txt* *highlight-line* - simple line highlighter
+
+ __        _         __       __    _         __       _
+[  |      (_)       [  |     [  |  (_)       [  |     / |_
+ | |--.   __   .--./)| |--.   | |  __   .--./)| |--. `| |-'
+ | .-. | [  | / /'`\;| .-. |  | | [  | / /'`\;| .-. | | | |
+ | | | |  | | \ \._//| | | |  | |  | | \ \._//| | | | | |,
+[___]|__][___].',__`[___]|__][___][___].',__`[___]|__]\__/
+             ( ( __))                 ( ( __))
+                   __    _
+                  [  |  (_)
+            ______ | |  __   _ .--.  .---.
+            ______|| | [  | [ `.-. |/ /__\\
+                   | |  | |  | | | || \__.,
+                  [___][___][___||__]'.__.'
+
+
+                              Written by: Tobias Neitzel (@qtc_de)
+==================================================================
+CONTENTS                                 *highlight-line-contents*
+
+  1.Intro...................................|highlight-line-intro|
+  2.Functionality provided..................|highlight-line-overview|
+      2.1.Global mappings...................|highlight-line-mappings|
+
+==================================================================
+1. Intro                                    *highlight-line-intro*
+
+What is highlight-line?
+
+  highlight-line is a super small vim plugin that allows you to
+  highlight lines in vi. In contrast to visual mode selection, the
+  highlight stays active even when the cursor moves. This makes
+  it easier to keep track of important lines that you want to keep
+  focus on.
+
+How do I use it?
+
+  highlight-line is build according to the typical structure of a
+  vim plugin. You can install it either by using vim's native
+  package manager or using one of the several available third party
+  package managers. After installation, highlight-line adds some
+  keybindings to your editor. All start with your <leader> key and
+  can be invoked either in normal or visual mode. See
+  |highlight-line-mappings| for more details.
+
+Acknowledgments
+
+  The implementation is basically the same as suggested by Colin
+  Bartlett in his vimtricks article:
+
+  https://vimtricks.com/p/highlight-specific-lines/
+
+
+==================================================================
+2. Functionality provided                *highlight-line-overview*
+
+------------------------------------------------------------------
+2.1. Global Mappings                     *highlight-line-mappings*
+
+highlight-line sets up several keymappings for normal and visual
+mode. The key combinations for the different mappings are exactly
+the same, only the workflow is different. With the visual mode
+mappings you select the text to operate on and then invoke the
+corresponding mapping. Normal mode mappings, on the other hand,
+are invoked in normal mode and always operate on the current line.
+All of the following key mappings are prefixed with your mapleader
+(<leader>).
+
+Normal Mode Mappings~
+Key       Description~
+hh....... Highlight the current line in dark grey
+hr....... Highlight the current line in dark red
+hy....... Highlight the current line in dark yellow
+hg....... Highlight the current line in dark green
+hb....... Highlight the current line in dark blue
+H........ Remove highlighting from the current line
+hc....... Remove highlighting everywhere
+
+Visual Mode Mappings~
+Key       Description~
+hh....... Highlight the selected line(s) in dark grey
+hr....... Highlight the selected line(s) in dark red
+hy....... Highlight the selected line(s) in dark yellow
+hg....... Highlight the selected line(s) in dark green
+hb....... Highlight the selected line(s) in dark blue
+H........ Remove highlighting from the selected line(s)
+hc....... Remove highlighting from the selected line(s)
