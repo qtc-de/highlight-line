@@ -24,7 +24,7 @@ either the `start` or `opt` folder of your vim configuration folder:
 
 ```console
 [user@host ~]$ cd ~/.vim/pack/plugins/start/
-[user@host ~/.vim/pack/plugins/start/]$ git clone https://github.com/qtc-de/vve
+[user@host ~/.vim/pack/plugins/start/]$ git clone https://github.com/qtc-de/highlight-line
 ```
 
 If you have chosen the `start` folder, *highlight-line* will be available on
